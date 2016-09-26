@@ -6,7 +6,7 @@ app.use(bodyParser.json());
 var mongoose = require('mongoose');
 
 // connect to database; 27017 is default mongo port
-mongoose.connect('localhost:/27017/test');
+mongoose.createConnection('localhost:/27017/test');
 
 // new object constructor
 var ourSchema = new mongoose.Schema({

@@ -19,7 +19,7 @@ myApp.controller('whereMyPeeps', ['$scope', '$http', function($scope, $http) {
 
     // get all the records
     $scope.getRecords = function(response) {
-        http({
+        $http({
                 method: 'GET',
                 url: '/getRecords',
             })
